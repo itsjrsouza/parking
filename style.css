@@ -141,6 +141,7 @@ header {
         & .plate,
         .time {
             width: 17.3125rem;
+            text-transform: uppercase;
         }
 
         &::placeholder {
@@ -258,4 +259,21 @@ header {
             padding: 1.5rem 8rem;
         }
     }
+}
+
+input[type="text"], input[type="time"] {
+    font-size: 1rem;
+  
+  @media (max-width: 600px) {
+    input[type="text"], input[type="time"] {
+      font-size: 0.875rem;
+    }
+  
+    /* Reduzir o zoom ao focar nos inputs */
+    input[type="text"]:focus, input[type="time"]:focus {
+      font-size: 14px;
+      transform: scale(0.9);
+      -webkit-transform: scale(0.9);
+    }
+  }
 }

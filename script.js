@@ -70,8 +70,15 @@ class Parquimetro {
   
   // Função para processar o pagamento
   function processarPagamento() {
-    const placa = plateInput.value.trim();
+    const placa = plateInput.value.trim().toUpperCase(); // Convertendo a placa para maiúsculas
     const tempo = timeInput.value;
+  
+    // Validar o tempo (garantir que o valor esteja entre 00:01 e 02:00)
+    let [horas, minutos] = tempo.split(":").map(Number);
+    if (horas < 0 || horas > 2 || (horas === 2 && minutos > 0)) {
+      alert("Horário inválido! O tempo permitido é de 00:01 a 02:00.");
+      return;
+    }
   
     if (!placa || !tempo) {
       alert("Preencha todos os campos!");
