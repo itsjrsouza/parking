@@ -1,15 +1,45 @@
 <!DOCTYPE html>
 <html lang="PT-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Parking Pay</title>
 
-    <link rel="shortcut icon" type="imagex/png" href="./assets/parking.svg">
-    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="imagex/png" href="./assets/parking.svg" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Pague seu estacionamento em segundos!</h1>
+        <h2>Sem filas, sem complicações. Apenas alguns cliques e pronto.</h2>
+      </header>
 
-</head>
-<body>
+      <div class="method">
+        <p>Métodos de pagamento</p>
+        <div class="payment">
+          <div class="icon">
+            <img class="icons img" id="google" src="./assets/google.svg" alt="" />
+            <img class="icons img" id="apple" src="./assets/apple.svg" alt="" />
+            <img class="icons img" id="master" src="./assets/master.svg" alt="" />
+            <img class="icons img" id="visa" src="./assets/visa.svg" alt="" />
+            <img class="icons img" id="pix" src="./assets/pix.svg" alt="" />
+          </div>
+        </div>
+      </div>
 
-</body>
+      <div class="infos">
+        <input type="text" name="plate" class="plate" placeholder="Placa" request/>
+        <input type="time" name="time" class="time" placeholder="Tempo 00:00" request/>
+      </div>
+
+      <div class="valor">R$ 0,00</div>
+
+      <div class="button-pagar">
+        <button>Pagar</button>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
 </html>
