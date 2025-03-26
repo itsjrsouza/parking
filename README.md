@@ -28,6 +28,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 O projeto prático consistia em criar uma página responsiva de um estacionamento.
 
 - [Acesse o projeto finalizado](https://github.com/itsjrsouza/parking)
+- [Figma] (https://www.figma.com/design/GS6r3mJydCTNXW9Tlmmzjy/Parking?m=auto&t=6K8S3zjZ401vmBse-1)
 
 ## 🔖 Estude
 
